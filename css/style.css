@@ -12663,3 +12663,7 @@ img {
     width: auto;
   }
 }
+
+.caps{
+  text-transform: uppercase;
+}

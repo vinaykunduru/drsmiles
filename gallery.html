@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D&R Smiles Dental Hospital</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="D&R Smiles Dental Hospital" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+    <!-- CSS Files
+    ================================================== -->
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+      id="bootstrap"
+    />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- color scheme -->
+    <link
+      id="colors"
+      href="css/colors/scheme-01.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      /* .bg-color-op-1 {
+        background-color: #f7f7f7;
+      } */
+      .hover {
+        /* background-color: #f7f7f7; */
+        border-radius: 8px;
+        /* border: 1px solid #ccc; */
+      }
+      .relative iframe {
+        width: 100%;
+        min-height: 450px;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <a href="#" id="back-to-top"></a>
+
+      <!-- preloader begin -->
+      <div id="de-loader"></div>
+      <!-- preloader end -->
+
+      <!-- header begin -->
+      <header class="transparent scroll-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="de-flex sm-pt10">
+                <div class="de-flex-col">
+                  <!-- logo begin -->
+                  <div id="logo">
+                    <a href="index.html">
+                      <img class="logo-main" src="images/logo.png" alt="" />
+                      <img class="logo-scroll" src="images/logo.png" alt="" />
+                      <img class="logo-mobile" src="images/logo.png" alt="" />
+                    </a>
+                  </div>
+                  <!-- logo end -->
+                </div>
+                <div class="de-flex-col header-col-mid">
+                  <!-- mainemenu begin -->
+                  <ul id="mainmenu">
+                    <li>
+                      <a class="menu-item" href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="#">Services</a>
+                      <ul>
+                        <li>
+                          <a href="services.html"
+                            >Preventive & General Dentistry</a
+                          >
+                        </li>
+                        <li>
+                          <a href="services.html">Digital Dental Imaging</a>
+                        </li>
+                        <li>
+                          <a href="services.html">Cosmetic Dentistry</a>
+                        </li>
+                        <li>
+                          <a href="services.html">Restorative Dentistry</a>
+                        </li>
+                        <li>
+                          <a href="services.html"
+                            >Mentally & Physically Retired</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- <li>
+                      <a class="menu-item" href="blog.html">Why choose us</a>
+                    </li> -->
+
+                    <li>
+                      <a class="menu-item" href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                      <a class="menu-item" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                  <!-- mainmenu end -->
+                </div>
+                <div class="de-flex-col">
+                  <div class="menu_side_area">
+                    <a href="book.html" class="btn-main fx-slide"
+                      ><span>Book Appointment</span></a
+                    >
+                    <span id="menu-btn"></span>
+                  </div>
+
+                  <div id="btn-extra">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+      <!-- content begin -->
+      <div class="no-bottom no-top" id="content">
+        <div id="top"></div>
+
+        <section
+          id="subheader"
+          class="bg-color-op-1 text-center"
+          style="background-color: #f9f9f9"
+        >
+          <div class="container relative z-2">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <h1 class="wow fadeInUp">Gallery</h1>
+                <div class="border-bottom my-3"></div>
+                <ul class="crumb wow fadeInDown">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active">Gallery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="section-gallery"
+          class="bg-light"
+          style="background-size: cover; background-repeat: no-repeat"
+        >
+          <div
+            class="container"
+            style="background-size: cover; background-repeat: no-repeat"
+          >
+            <div
+              class="row d-none"
+              style="background-size: cover; background-repeat: no-repeat"
+            >
+              <div
+                class="col-md-12 text-center"
+                style="background-size: cover; background-repeat: no-repeat"
+              >
+                <ul
+                  id="filters"
+                  class="wow fadeInUp animated"
+                  data-wow-delay="0s"
+                  style="
+                    visibility: visible;
+                    animation-delay: 0s;
+                    animation-name: fadeInUp;
+                  "
+                >
+                  <li>
+                    <a href="#" data-filter="*" class="selected">View All</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".dentists" class="">dentists</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".facilities" class=""
+                      >facilities</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".services" class="">services</a>
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              id="gallery"
+              class="row g-3 wow fadeIn animated"
+              data-wow-delay=".3s"
+              style="
+                background-size: cover;
+                background-repeat: no-repeat;
+                visibility: visible;
+                animation-delay: 0.3s;
+                animation-name: fadeIn;
+                position: relative;
+                height: 635.175px;
+              "
+            >
+              <div
+                class="col-md-3 col-sm-6 col-12 item facilities"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                "
+              >
+                <a
+                  href="images/gallery/g-1.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-1.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item facilities"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 324px;
+                  top: 0px;
+                "
+              >
+                <a
+                  href="images/gallery/g-2.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-2.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item facilities"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 648px;
+                  top: 0px;
+                "
+              >
+                <a
+                  href="images/gallery/g-3.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-3.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item facilities"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 972px;
+                  top: 0px;
+                "
+              >
+                <a
+                  href="images/gallery/g-4.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-4.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item facilities"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 0px;
+                  top: 211px;
+                "
+              >
+                <a
+                  href="images/gallery/g-5.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-5.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item dentists"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 324px;
+                  top: 211px;
+                "
+              >
+                <a
+                  href="images/gallery/g-6.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-6.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item dentists"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 648px;
+                  top: 211px;
+                "
+              >
+                <a
+                  href="images/gallery/g-7.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-7.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item dentists"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 972px;
+                  top: 211px;
+                "
+              >
+                <a
+                  href="images/gallery/g-8.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-8.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item services"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 0px;
+                  top: 423px;
+                "
+              >
+                <a
+                  href="images/gallery/g-9.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-9.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item services"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 324px;
+                  top: 423px;
+                "
+              >
+                <a
+                  href="images/gallery/g-10.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-10.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item services"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 648px;
+                  top: 423px;
+                "
+              >
+                <a
+                  href="images/gallery/g-11.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-11.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-md-3 col-sm-6 col-12 item services"
+                style="
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 972px;
+                  top: 423px;
+                "
+              >
+                <a
+                  href="images/gallery/g-12.jpeg"
+                  class="image-popup d-block hover"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-1"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    >
+                      View
+                    </div>
+                    <div
+                      class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <img
+                      src="images/gallery/g-12.jpeg"
+                      class="w-100 hover-scale-1-2"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- content end -->
+      <!-- footer begin -->
+      <footer class="section-dark">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-lg-4 col-sm-6">
+              <img src="images/logo-white.png" class="logo-footer" alt="" />
+              <div class="spacer-20"></div>
+              <p>
+                <span class="caps">D&R Smiles Dental Hospital</span> provides
+                ethical, affordable, and expert dental care in Sainikpuri,
+                Defence Colony & Malkajgiri—ensuring your family's oral health
+                with care and precision.
+              </p>
+
+              <div class="social-icons mb-sm-30">
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+              <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                  <div class="widget">
+                    <h5>Company</h5>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="services.html">Our Services</a></li>
+
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <div class="widget">
+                    <h5>Our Services</h5>
+                    <ul>
+                      <li>
+                        <a href="services.html"
+                          >Preventive &amp; General Dentistry</a
+                        >
+                      </li>
+                      <li>
+                        <a href="services.html">Digital Dental Imaging</a>
+                      </li>
+                      <li>
+                        <a href="services.html">Cosmetic Dentistry</a>
+                      </li>
+                      <li>
+                        <a href="services.html">Restorative Dentistry</a>
+                      </li>
+                      <li>
+                        <a href="services.html"
+                          >Mentally & Physically Retired</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+              <div class="widget">
+                <h5>Contact Us</h5>
+                <div class="fw-bold text-white">
+                  <i class="icofont-location-pin me-2 id-color"></i>Clinic
+                  Location
+                </div>
+                Above Vision Express, 3rd Floor, SP Square, Plot No: 112, Sy No:
+                218/1, Defence Colony, Sainikpuri, Secunderabad – 560094.
+
+                <div class="spacer-20"></div>
+
+                <div class="fw-bold text-white">Call Us</div>
+                +91 91211 51114
+
+                <div class="spacer-20"></div>
+
+                <div class="fw-bold text-white">Send a Message</div>
+                <a
+                  href="/cdn-cgi/l/email-protection"
+                  class="__cf_email__"
+                  data-cfemail="4f2c20213b2e2c3b0f2b2a213b262e2c2e3d2a612c2022"
+                  >drsmilesdentalhospital@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subfooter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="de-flex">
+                  <div class="de-flex-col">
+                    Copyright 2025 - D&R Smiles Dental Hospital
+                  </div>
+                  <ul class="menu-simple">
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+
+    <!-- overlay content begin -->
+    <div id="extra-wrap" class="text-light">
+      <div id="btn-close">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="extra-content">
+        <img src="images/logo-white.png" class="w-150px" alt="" />
+
+        <div class="spacer-30-line"></div>
+
+        <h5>Our Services</h5>
+        <ul class="ul-check">
+          <li>
+            <a href="services.html">Preventive &amp; General Dentistry</a>
+          </li>
+          <li>
+            <a href="services.html">Digital Dental Imaging</a>
+          </li>
+          <li>
+            <a href="services.html">Cosmetic Dentistry</a>
+          </li>
+          <li>
+            <a href="services.html">Restorative Dentistry</a>
+          </li>
+          <li>
+            <a href="services.html">Mentally & Physically Retired</a>
+          </li>
+        </ul>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>Contact Us</h5>
+        <div>
+          <i class="icofont-clock-time me-2 op-5"></i>Monday - Friday 08.00 -
+          18.00
+        </div>
+        <div>
+          <i class="icofont-location-pin me-2 op-5"></i>Above Vision Express,
+          3rd Floor, SP Square, Plot No: 112, Sy No: 218/1, Defence Colony,
+          Sainikpuri, Secunderabad – 560094.
+        </div>
+        <div>
+          <i class="icofont-envelope me-2 op-5"></i
+          ><a
+            href="/cdn-cgi/l/email-protection"
+            class="__cf_email__"
+            data-cfemail="c3a0acadb7a2a0b783a7a6adb7aaa2a0a2b1a6eda0acae"
+            >[email&#160;protected]</a
+          >
+        </div>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>About Us</h5>
+        <p>
+          <span class="caps">D&R Smiles Dental Hospital</span> provides ethical,
+          affordable, and expert dental care in Sainikpuri, Defence Colony &
+          Malkajgiri—ensuring your family's oral health with care and precision.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-x-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <script src="
+https://cdn.jsdelivr.net/npm/iconfont@0.4.1/style.min.js
+"></script>
+    <script
+      src="https://kit.fontawesome.com/f7ba2b2d74.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/custom-swiper-1.js"></script>
+    <script src="js/custom-marquee.js"></script>
+  </body>
+</html>
