@@ -112,7 +112,7 @@
                     <span id="menu-btn"></span>
                   </div>
 
-                  <div id="btn-extra">
+                  <div id="btn-extra" class="d-none">
                     <span></span>
                     <span></span>
                   </div>
@@ -127,96 +127,162 @@
       <div class="no-bottom no-top" id="content">
         <div id="top"></div>
 
-        <!-- <section
-          id="section-intro"
-          class="no-top no-bottom relative overflow-hidden d-none"
-        >
-          <div class="relative">
-            <div class="abs abs-centered w-100 z-2">
-              <div class="container">
-                <div class="row g-4 align-items-center justify-content-between">
-                  <div class="col-lg-6">
-                    <div class="spacer-single sm-hide"></div>
-                    <div class="subtitle" style="text-transform: uppercase">
-                      The Pinnacle of Family Dental Care..
-                    </div>
-                    <h1>
-                      D&R Smiles Dental Hospital – Affordable Dental Care in
-                      Sainikpuri, Hyderabad
-                    </h1>
-                    <a class="btn-main btn-line fx-slide" href="#"
-                      ><span>Book Appointment</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mh-800">
-              <div class="swiper wow scaleIn">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div
-                      class="swiper-inner"
-                      data-bgimage="url(images/slider/1.jpg) center"
-                    ></div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-
         <section
           id="section-intro"
           class="bg-color-op-1 pb-0 overflow-hidden"
           style="height: 100dvh"
         >
           <div class="container">
-            <div class="row g-4 gx-5 align-items-center">
-              <div class="col-lg-6">
-                <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">
+            <div
+              class="row g-4 gx-5 align-items-center"
+              style="min-height: 80vh"
+            >
+              <div
+                class="col-lg-6 d-flex flex-column justify-content-center"
+                style="height: 100%"
+              >
+                <!-- <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">
                   The Pinnacle of Family Dental Care..
-                </div>
-                <h1 class="wow fadeInUp" data-wow-delay=".2s">
-                  D&R Smiles Dental Hospital – Affordable Dental Care in
-                  Sainikpuri, Hyderabad
-                </h1>
-                <!-- <p class="col-lg-10 wow fadeInUp" data-wow-delay=".4s">
-                  We offer high-quality dental care tailored for the whole
-                  family. From routine checkups to advanced treatments, our
-                  compassionate team ensures your smile stays healthy and
-                  confident.
-                </p> -->
+                </div> -->
+                <style>
+                  .swiper {
+                    background: #fff;
+                  }
 
-                <a
+                  .swiper,
+                  .sw-overlay {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                  }
+
+                  .swiper-slide {
+                    position: relative;
+                    text-align: left !important;
+                    background: #fff !important;
+                    color: #000;
+                    word-break: break-all;
+                    word-wrap: break-word;
+                  }
+
+                  .swiper {
+                    width: 100%;
+                    height: 100%;
+                  }
+
+                  .swiper-slide {
+                    text-align: left;
+                    font-size: 18px;
+                    background: transparent;
+                    /*  display: flex;
+                    justify-content: center;
+                    align-items: center; */
+                    margin-left: 0 !important;
+                    word-break: break-all;
+                  }
+
+                  .swiper-slide img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                  .swiper-slide p {
+                    min-height: 120px;
+                    font-size: 21px;
+                    width: 60%;
+                    margin-left: 0;
+                  }
+                  .swiper-pagination {
+                    text-align: left !important;
+                  }
+                  .swiper-pagination-bullet-active {
+                    background-color: #000 !important;
+                  }
+                </style>
+                <h1
+                  class="wow fadeInUp"
+                  data-wow-delay=".2s"
+                  style="
+                    visibility: visible;
+                    animation-delay: 0.2s;
+                    animation-name: fadeInUp;
+                    font-size: clamp(2rem, 5vw, 3.5rem);
+                    line-height: 1.2;
+                    font-weight: 700;
+                    word-break: break-word;
+                    max-width: 50%;
+                  "
+                >
+                  The Pinnacle of <br />Family Dental Care..
+                </h1>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <p>
+                        In our commitment to acceptance and exceptional
+                        dental<br />
+                        care, we also believe in empowering our patients with<br />
+                        knowledge about their oral health.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p>
+                        We are dedicated to offer dental care information to<br />
+                        help individuals understand the importance of good
+                        oral<br />
+                        hygiene and preventive care.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p>
+                        From tips on brushing and flossing teeth to guidance
+                        on<br />
+                        maintaining healthy habits.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p>
+                        We are here to support our patients in achieving and<br />
+                        maintaining optimal oral health for life.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p>
+                        We are excited to serve our community and provide
+                        high<br />
+                        quality dental care to the patients of all ages.
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <p>
+                        We are looking forward to welcoming you and your
+                        family<br />
+                        to our dental care and thereby help you achieve your
+                        best smile yet.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- <a
                   class="btn-main mb10 mb-3 wow fadeInUp"
                   data-wow-delay=".6s"
                   href="#"
                   ><span>Book Appointment</span></a
-                >
+                > -->
 
-                <!-- <div class="border-bottom my-3"></div>
-
-                <div class="d-flex align-items-center text-dark">
-                  <div class="me-3">Google Rating</div>
-                  <div class="me-3">5.0</div>
-                  <div class="d-flex fs-14 d-rating me-3">
-                    <i class="fa fa-solid fa-star m-1"></i>
-                    <i class="fa fa-solid fa-star m-1"></i>
-                    <i class="fa fa-solid fa-star m-1"></i>
-                    <i class="fa fa-solid fa-star m-1"></i>
-                    <i class="fa fa-solid fa-star m-1"></i>
-                  </div>
-                  <div class="me-3">Based on 23k Reviews</div>
-                </div> -->
-
-                <div class="spacer-double"></div>
+                <!-- <div class="spacer-double"></div> -->
               </div>
 
-              <div class="col-lg-6">
-                <div class="relative">
+              <div
+                class="col-lg-6 d-flex align-items-center justify-content-center"
+                style="height: 100%"
+              >
+                <div class="relative w-100">
                   <!-- <div
                     class="bg-dark text-light shadow-1 abs end-0 abs-middle p-4 rounded-1 overflow-hidden z-2 wow fadeInRight"
                     data-wow-delay=".5s"
@@ -611,7 +677,7 @@
               style="background-size: cover; background-repeat: no-repeat"
             >
               <div
-                class="col-lg-3 offset-md-2"
+                class="col-lg-4"
                 style="background-size: cover; background-repeat: no-repeat"
               >
                 <div
@@ -661,7 +727,7 @@
               </div>
 
               <div
-                class="col-lg-3"
+                class="col-lg-4"
                 style="background-size: cover; background-repeat: no-repeat"
               >
                 <div
@@ -711,7 +777,7 @@
               </div>
 
               <div
-                class="col-lg-3"
+                class="col-lg-4"
                 style="background-size: cover; background-repeat: no-repeat"
               >
                 <div
@@ -761,9 +827,9 @@
               </div>
               <!-- Row -->
             </div>
-            <div class="row my-4 justify-content-center">
+            <div class="row my-4">
               <div
-                class="col-lg-3"
+                class="col-lg-4"
                 style="background-size: cover; background-repeat: no-repeat"
               >
                 <div
@@ -813,7 +879,57 @@
               </div>
 
               <div
-                class="col-lg-3"
+                class="col-lg-4"
+                style="background-size: cover; background-repeat: no-repeat"
+              >
+                <div
+                  class="relative rounded-1 overflow-hidden"
+                  style="background-size: cover; background-repeat: no-repeat"
+                >
+                  <div
+                    class="rounded-1 overflow-hidden wow fadeIn zoomIn animated"
+                    style="
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      visibility: visible;
+                      animation-name: zoomIn;
+                    "
+                  >
+                    <img
+                      src="images/dr-Sheshank.jpg"
+                      class="w-100 wow scaleIn animated"
+                      alt=""
+                      style="visibility: visible; animation-name: scaleIn"
+                    />
+                  </div>
+
+                  <div
+                    class="abs w-100 start-0 bottom-0 z-3"
+                    style="background-size: cover; background-repeat: no-repeat"
+                  >
+                    <div
+                      class="p-2 rounded-10 m-3 text-center bg-white wow fadeInDown animated"
+                      style="
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        visibility: visible;
+                        animation-name: fadeInDown;
+                      "
+                    >
+                      <h4 class="mb-0">Dr S Sheshank, MDS</h4>
+                      <p class="mb-2">Othodontics</p>
+                      <p>
+                        DCI Registration: A-2292<br />
+
+                        10 yrs Orthodontist, 15 yrs General Dentist
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4"
                 style="background-size: cover; background-repeat: no-repeat"
               >
                 <div
@@ -850,12 +966,12 @@
                         animation-name: fadeInDown;
                       "
                     >
-                      <h4 class="mb-0">Dr S Sheshank, MDS</h4>
-                      <p class="mb-2">Othodontics</p>
+                      <h4 class="mb-0">Dr. Kiran Babu, MDS</h4>
+                      <p class="mb-2">Prosthodontist</p>
                       <p>
-                        DCI Registration: A-2292<br />
+                        TSDC - <strong>A 7074</strong><br />
 
-                        10 yrs Orthodontist, 15 yrs General Dentist
+                        Pg from KNR University of health sciences
                       </p>
                     </div>
                   </div>
