@@ -9517,7 +9517,7 @@ section.no-padding {
 }
 
 .owl-dots button.active{
-  background: var(--primary-color);
+  background: #000;
 }
 
 .owl-theme .owl-dots .owl-dot span {
