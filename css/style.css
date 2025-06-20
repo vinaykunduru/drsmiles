@@ -824,7 +824,7 @@ header.smaller.scroll-light #btn-extra span{
 
 #mainmenu li li a:hover,
 #mainmenu ul li:hover>a {
-  color: #fff;
+  color: #000;
   background: var(--primary-color);
 }
 
