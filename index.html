@@ -352,14 +352,18 @@
             class="container d-flex justify-content-center align-items-center gap-2"
             style="gap: 10px"
           >
-            <img
-              src="images/Baba-Mukthananda.jpg"
-              alt="Baba Mukthananda Maharaj"
-              style="height: 35px; width: auto; border-radius: 4px"
-            />
-            <p class="mb-0" style="font-size: 14px; color: #333">
-              <em>With the Blessings of Baba Mukthananda Maharaj.</em>
-            </p>
+            <div class="row">
+              <div class="col-lg-12 d-flex" style="gap: 10px">
+                <img
+                  src="images/Baba-Mukthananda.jpg"
+                  alt="Baba Mukthananda Maharaj"
+                  style="height: 35px; width: auto; border-radius: 4px"
+                />
+                <p class="mb-0" style="font-size: 14px; color: #333">
+                  <em>With the Blessings of Baba Mukthananda Maharaj.</em>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -1242,8 +1246,7 @@
                   <form
                     name="bookingForm"
                     id="booking_form"
-                    method="post"
-                    action="#"
+                    onsubmit="return sendToWhatsApp(event);"
                   >
                     <div
                       class="row g-4"
@@ -1793,5 +1796,39 @@ https://cdn.jsdelivr.net/npm/iconfont@0.4.1/style.min.js
     <script src="js/swiper.js"></script>
     <script src="js/custom-swiper-1.js"></script>
     <script src="js/custom-marquee.js"></script>
+
+    <script>
+      function sendToWhatsApp(event) {
+        event.preventDefault(); // Prevent form submission
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const service = document.getElementById("service").value;
+        const date = document.querySelector("input[name='date']").value.trim();
+        const time = document.getElementById("time").value;
+        const message = document.getElementById("message").value.trim();
+
+        const whatsappNumber = "919985294300"; // International format, no '+'
+
+        // Compose message
+        let text = `*New Appointment Request*%0A`;
+        text += `*Name:* ${name}%0A`;
+        text += `*Email:* ${email}%0A`;
+        text += `*Phone:* ${phone}%0A`;
+        text += `*Service:* ${service}%0A`;
+        text += `*Date:* ${date}%0A`;
+        text += `*Time:* ${time}%0A`;
+        if (message) {
+          text += `*Message:* ${message}%0A`;
+        }
+
+        // Redirect to WhatsApp
+        const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+        window.open(url, "_blank");
+
+        return false;
+      }
+    </script>
   </body>
 </html>
